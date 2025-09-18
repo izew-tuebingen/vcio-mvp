@@ -1,0 +1,369 @@
+{
+    "questionnaire_info": {
+        "title": "Accountability",
+        "description": "",
+        "version": "1.0",
+        "created_date": "2025-06-09"
+    },
+    "question_collections": [
+        {
+            "collection_id": "A1",
+            "collection_title": "Processes in life cycle to ensure accountability",
+            "collection_description": "",
+            "questions": [
+                {
+                    "question_id": "A1.1",
+                    "question_text": "How detailed is the process of data collection and management logged/recorded and how easily can relevant stakeholders access it?",
+                    "guidance": "Relevant stakeholders can for example be data users, product manager or competent authorities. Logs/Records have to be stored for a reasonable time to allow delayed analysis.",
+                    "subquestion": null,
+                    "importance_level": 3,
+                    "required": true,
+                    "answer_options": [
+                        {
+                            "option_id": "A",
+                            "option_text": "Logging/Records includes: origin of data, responsible person, relevant data preparation processing operations (annotation, labelling, cleaning, enrichment, aggregation, ...), recovery of data in every stage. Stakeholder access: easy, universal format"
+                        },
+                        {
+                            "option_id": "B", 
+                            "option_text": "Logging/Records includes: origin of data, responsible person, relevant data preparation processing operations (annotation, labelling, cleaning, enrichment, aggregation, ...), recovery of data in every stage. Stakeholder access: In an unstructured and not clearly/prepared form; only for competent authorities"
+                        },
+                        {
+                            "option_id": "C",
+                            "option_text": "Logging/Records includes: origin of data, responsible person. Stakeholder access: In an unstructured and not clearly/prepared form; only for competent authorities"
+                        },
+                        {
+                            "option_id": "D",
+                            "option_text": "There is no logging/recording, but details about origin of data are documented. Stakeholder access: In an unstructured and not clearly/prepared form; only for competent authorities"
+                        },
+                        {
+                            "option_id": "G",
+                            "option_text": "The data collection process is not logged or documented."
+                        }
+                    ],
+                    "followup_questions": []
+                },
+                {
+                    "question_id": "A1.2",
+                    "question_text": "Are the development and training process logged/recorded?",
+                    "guidance": null,
+                    "subquestion": null,
+                    "importance_level": 3,
+                    "required": true,
+                    "answer_options": [
+                        {
+                            "option_id": "A",
+                            "option_text": "Yes, comprehensive logging/recording  including the responsibilities is available, including: operation in which the data was used and how they have been modified; version control of AI systems and the involved data; version restore/recovery of AI systems and is available for all relevant stakeholders."
+                        },
+                        {
+                            "option_id": "B",
+                            "option_text": "Yes, comprehensive logging/recording  including the responsibilities is available, including: operation in which the data was used and how they have been modified; version control of AI systems and the involved data and is available for all relevant stakeholders"
+                        },
+                        {
+                            "option_id": "C",
+                            "option_text": "No logging/recording  available, but a general description of the development and training process including responsibilities is provided for all relevant stakeholders."
+                        },
+                        {
+                            "option_id": "D",
+                            "option_text": "No logging/recording , but a general description of the development and training process is provided "
+                        },
+                        {
+                            "option_id": "G",
+                            "option_text": "There is no logging and information about the process"
+                        }
+                    ],
+                    "followup_questions": []
+                },
+                {
+                    "question_id": "A1.3",
+                    "question_text": "Is the traceability of the system-composition (including soft- and hardware-composition and components) guaranteed?",
+                    "guidance": "Software-components can be: AI model, AI system, AI application",
+                    "subquestion": null,
+                    "importance_level": 3,
+                    "required": true,
+                    "answer_options": [
+                        {
+                            "option_id": "A",
+                            "option_text": "There is sufficient information about the system available: to easily reconstruct the composition of the system, at every time in its lifecycle"
+                        },
+                        {
+                            "option_id": "B",
+                            "option_text": "There is sufficient information about the system available: to easily reconstruct the composition of the system, at major inflection points (releases, gates) in its lifecycle"
+                        },
+                        {
+                            "option_id": "C",
+                            "option_text": "There is sufficient information about the system available to: reconstruct the composition of the system with additional efforts"
+                        },
+                        {
+                            "option_id": "D",
+                            "option_text": "There is not enough information to reconstruct the composition of the system."
+                        },
+                        {
+                            "option_id": "G",
+                            "option_text": "No."
+                        }
+                    ],
+                    "followup_questions": []
+                },
+                {
+                    "question_id": "A1.4",
+                    "question_text": "Are systems with a learning component monitored  in their interaction with their environment throughout the runtime?",
+                    "guidance": "Learning systems, which adapt their behaviour during their use should have additional monitoring applications that track the changes in the system and highlight how the evolving systems differ from the original one.",
+                    "subquestion": null,
+                    "importance_level": 3,
+                    "required": true,
+                    "answer_options": [
+                        {
+                            "option_id": "A",
+                            "option_text": "Yes, the learning process is monitored: Logging of input-output behaviour is available for a defined period; Misuse is detected and reported; Concept Drift and Data Drift is detected and reported (e.g. changing operational domain properties) — If required, the information can be adequately prepared and made available to the relevant stakeholders."
+                        },
+                        {
+                            "option_id": "B",
+                            "option_text": "Yes, the learning process is monitored: Logging of input-output behaviour is available for a defined period; Misuse is detected and reported; Concept Drift and Data Drift is detected and reported (e.g. changing operational domain properties)"
+                        },
+                        {
+                            "option_id": "C",
+                            "option_text": "The learning process will be logged, but reviewed only at infrequent intervals: Misuse is detected and reported; Concept Drift and Data Drift is detected and reported (e.g. changing operational domain properties)"
+                        },
+                        {
+                            "option_id": "F",
+                            "option_text": "The learning process will be logged, but review is not planned."
+                        },
+                        {
+                            "option_id": "G",
+                            "option_text": "There is no logging or monitoring of the learning process."
+                        }
+                    ],
+                    "followup_questions": []
+                }
+            ]
+        },
+        {
+            "collection_id": "A2",
+            "collection_title": "Corporate/institutional liability (retrospective)",
+            "collection_description": null,
+            "questions": [
+                {
+                    "question_id": "A2.1",
+                    "question_text": "Is there a defined channel for giving feedback and obtain information about system characteristics?",
+                    "guidance": null,
+                    "subquestion": "Information and explanations about theses that can be received: A1.4 - Interactions of learning Systems with the environment; F1.2 - Target Groups; F1.3 - Marginalised Groups; F1.7 - Bias; R1.1 - ODD and Intended Use; R1.5 - Risk and potential harms; T3.3  - User Interface; T3.4  - Explanations for affected persons",
+                    "importance_level": 3,
+                    "required": true,
+                    "answer_options": [
+                        {
+                            "option_id": "A",
+                            "option_text": "Yes, there is an instance that: has enough Information and power to give individualized Information; can enforce reviews of system characteristics"
+                        },
+                        {
+                            "option_id": "B",
+                            "option_text": "Yes, there is an instance that: has enough Information and power to give individualized Information"
+                        },
+                        {
+                            "option_id": "C",
+                            "option_text": "Yes, but only standardized Information can be given"
+                        },
+                        {
+                            "option_id": "G",
+                            "option_text": "No"
+                        }
+                    ],
+                    "followup_questions": []
+                },
+                {
+                    "question_id": "A2.2",
+                    "question_text": "How 'easy' is the access to the feedback channels?",
+                    "guidance": null,
+                    "subquestion": null,
+                    "importance_level": 3,
+                    "required": true,
+                    "answer_options": [
+                        {
+                            "option_id": "A",
+                            "option_text": "Everyone with a justified interest can contact the feedback channel and receives direct feedback"
+                        },
+                        {
+                            "option_id": "B",
+                            "option_text": "Only users can contact the feedback channels"
+                        },
+                        {
+                            "option_id": "C",
+                            "option_text": "Access is only possible when fulfilling certain requirements: e.g. additional payment or only at predefined points during the lifecycle"
+                        },
+                        {
+                            "option_id": "F",
+                            "option_text": "Only for the competent authorities"
+                        },
+                        {
+                            "option_id": "G",
+                            "option_text": "No"
+                        }
+                    ],
+                    "followup_questions": []
+                }
+                
+            ]
+        },
+        {
+            "collection_id": "A3",
+            "collection_title": "Responsible Human Oversight",
+            "collection_description": null,
+            "questions": [
+                {
+                    "question_id": "A3.1",
+                    "question_text": "Skippable if not HIC - Human in Command (Control): Is the user expertise needed to judge the results of the AI system to avoid overconfidence defined?",
+                    "guidance": null,
+                    "subquestion": null,
+                    "importance_level": 3,
+                    "required": false,
+                    "answer_options": [
+                        {
+                            "option_id": "A",
+                            "option_text": "The level of expertise required for a human user to understand and judge the system's recommendations, given the data and body of knowledge in the field, is documented and appropriate with regard to the intended purpose."
+                        },
+                        {
+                            "option_id": "B",
+                            "option_text": "The level of expertise that is required by a human operator to  check the plausibility of the recommendations of the system given the data and the body of knowledge of that domain are documented."
+                        },
+                        {
+                            "option_id": "C",
+                            "option_text": "The expertise that is required by a human operator to work successfully with the system are documented."
+                        },
+                        {
+                            "option_id": "D",
+                            "option_text": "The level of expertise is not specified but describtions about it can be requested and obtained."
+                        },
+                        {
+                            "option_id": "G",
+                            "option_text": "No measures have been taken"
+                        }
+                    ],
+                    "followup_questions": []
+                },
+                {
+                    "question_id": "A3.2",
+                    "question_text": "Skippable if not HIC - Human in Command (Control): Which effort is needed to understand and interact with the AI system? (depending on the application context)",
+                    "guidance": null,
+                    "subquestion": null,
+                    "importance_level": 3,
+                    "required": false,
+                    "answer_options": [
+                        {
+                            "option_id": "A",
+                            "option_text": "The intended user understands the actions of the AI system/application with no effort and knows how to interact with it immediately."
+                        },
+                        {
+                            "option_id": "B",
+                            "option_text": "The intended user understands the actions of the AI system/application with little effort and knows how to interact with it after a short time period."
+                        },
+                        {
+                            "option_id": "C",
+                            "option_text": "Guided introduction of the AI system/application is needed."
+                        },
+                        {
+                            "option_id": "D",
+                            "option_text": "Extended training is needed"
+                        },
+                        {
+                            "option_id": "G",
+                            "option_text": "Extended training and a prior knowledge in the application context of the AI system is needed."
+                        }
+                    ],
+                    "followup_questions": []
+                },
+                {
+                    "question_id": "A3.3",
+                    "question_text": "Skippable if not HITL - Human in the Loop: Which measures are taken to ensure that the AI system does not affect human autonomy by interfering with the operator’s decision-making process in an unintended way?",
+                    "guidance": null,
+                    "subquestion": null,
+                    "importance_level": 3,
+                    "required": false,
+                    "answer_options": [
+                        {
+                            "option_id": "A",
+                            "option_text": "The level of human control and involvement in the decision is documented and the interfaces is designed to allow the operator to easily understand and influence the decision process. Proposal of the system and human decision are documented."
+                        },
+                        {
+                            "option_id": "B",
+                            "option_text": "The level of human control and involvement in the decision is documented and the interfaces is designed to allow the operator to influence the decision process."
+                        },
+                        {
+                            "option_id": "C",
+                            "option_text": "The level of human control and involvement in the decision is documented in a way that allows auditing."
+                        },
+                        {
+                            "option_id": "D",
+                            "option_text": "The level of human control and involvement in the decision is documented."
+                        },
+                        {
+                            "option_id": "G",
+                            "option_text": "None of the above"
+                        }
+                    ],
+                    "followup_questions": []
+                },
+                {
+                    "question_id": "A3.4",
+                    "question_text": "Skippable if not HITL - Human in the Loop: Is the human takeover of the system designed so that the user understands the current state of the system and can therefore take over quickly?",
+                    "guidance": null,
+                    "subquestion": null,
+                    "importance_level": 3,
+                    "required": false,
+                    "answer_options": [
+                        {
+                            "option_id": "A",
+                            "option_text": "The system has been designed in a way that a seamless handover to a human operator is always possible. This handover has been tested within the full operations envelope of the system and properly documents"
+                        },
+                        {
+                            "option_id": "B",
+                            "option_text": "The system has been designed in a way that a seamless handover to a human operator is always possible. This handover has been tested and documented in the main modes of operation"
+                        },
+                        {
+                            "option_id": "C",
+                            "option_text": "The system has been designed in a way that a seamless handover to a human operator is always possible. This handover has only been tested sporadically"
+                        },
+                        {
+                            "option_id": "D",
+                            "option_text": "The system has been designed in a way that a seamless handover to a human operator is always possible. This handover was not tested."
+                        },
+                        {
+                            "option_id": "G",
+                            "option_text": "System was not designed and has not been tested regarding the handover to a human operator."
+                        }
+                    ],
+                    "followup_questions": []
+                },
+                {
+                    "question_id": "A3.6",
+                    "question_text": "Skippable if not HOL - Human on the Loop: Does the system makes the decision parameters transparent and allows post-hoc changes?",
+                    "guidance": null,
+                    "subquestion": null,
+                    "importance_level": 3,
+                    "required": false,
+                    "answer_options": [
+                        {
+                            "option_id": "A",
+                            "option_text": "Decision parameters are well documented and transparent. There is a process and tools in place that allow documentation and ex-post explanation of decisions taken by the system. Process parameters can be changed (System can be retrained by customer)."
+                        },
+                        {
+                            "option_id": "B",
+                            "option_text": "Decision parameters are well documented and transparent. Decisions taken by the system are well documented. Process parameters can be changed (System can be retrained by customer)."
+                        },
+                        {
+                            "option_id": "C",
+                            "option_text": "Decision parameters are transparent and can be changed (System can be retrained by customer)."
+                        },
+                        {
+                            "option_id": "D",
+                            "option_text": "Process in place to change decision parameters by developer"
+                        },
+                        {
+                            "option_id": "G",
+                            "option_text": "No."
+                        }
+                    ],
+                    "followup_questions": []
+                }
+            ]
+        }
+    ]
+}

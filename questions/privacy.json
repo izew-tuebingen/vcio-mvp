@@ -1,0 +1,256 @@
+{
+    "questionnaire_info": {
+        "title": "Privacy",
+        "description": "",
+        "version": "1.0",
+        "created_date": "2025-06-10"
+    },
+    "question_collections": [
+        {
+            "collection_id": "P1",
+            "collection_title": "Process for processing of data",
+            "collection_description": "",
+            "questions": [
+                {
+                    "question_id": "P1.1",
+                    "question_text": "Do you comply to the GDPR?",
+                    "guidance": null,
+                    "subquestion": null,
+                    "importance_level": 3,
+                    "required": true,
+                    "answer_options": [
+                        {
+                            "option_id": "A",
+                            "option_text": "Yes."
+                        },
+                        {
+                            "option_id": "B",
+                            "option_text": "No."
+                        }
+                    ],
+                    "followup_questions": []
+                }
+            ]
+        },
+        {
+            "collection_id": "P2",
+            "collection_title": "Protection of personal data (AI related)",
+            "collection_description": "",
+            "questions": [
+                {
+                    "question_id": "P2.1",
+                    "question_text": "Which grade of anonymity has the used data?",
+                    "guidance": "How anonymous is the dataset, i.e. How much personal information can be inferred from the dataset(s).",
+                    "subquestion": null,
+                    "importance_level": 3,
+                    "required": true,
+                    "answer_options": [
+                        {
+                            "option_id": "A",
+                            "option_text": "It is justified, that no personal data exists in the dataset."
+                        },
+                        {
+                            "option_id": "B",
+                            "option_text": "Dataset has been sanitised (removal of all data directly identifing a natural person) and anonymised."
+                        },
+                        {
+                            "option_id": "C",
+                            "option_text": "dataset anonymised with state-of-the-art methods(e.g. k-anonymization, differential privacy, etc)"
+                        },
+                        {
+                            "option_id": "D",
+                            "option_text": "Pseudonymization"
+                        },
+                        {
+                            "option_id": "G",
+                            "option_text": "No measures taken."
+                        }
+                    ],
+                    "followup_questions": []
+                },
+                {
+                    "question_id": "P2.2",
+                    "question_text": "Did you assured that no personal data can be extracted from the AI System?",
+                    "guidance": "How does the AI system development and training, affect the privacy of the dataset. How much information can be inferred from the AI system/application as a result of the chosen development process? E.g. via model inversion, membership inference attack, etc.",
+                    "subquestion": null,
+                    "importance_level": 3,
+                    "required": true,
+                    "answer_options": [
+                        {
+                            "option_id": "A",
+                            "option_text": "Yes, it is assured that no personal data can be extracted and the approach taken is justified in a report."
+                        },
+                        {
+                            "option_id": "C",
+                            "option_text": "It is justified, that personal data can only be extracted with high effort. "
+                        },
+                        {
+                            "option_id": "F",
+                            "option_text": "Personal data can easily be extracted from the AI system. A public report explains to users which kind of data can be extracted and what the risk of extraction is."
+                        },
+                        {
+                            "option_id": "G",
+                            "option_text": "No measures taken."
+                        }
+                    ],
+                    "followup_questions": []
+                },
+                {
+                    "question_id": "P2.3",
+                    "question_text": "What measure have you taken, to prevent attacks on the AI System and Application with the aim to inferred data/information?",
+                    "guidance": "Deployed/Live-system privacy preserving mechanism and privacy attack mitigation process",
+                    "subquestion": null,
+                    "importance_level": 3,
+                    "required": true,
+                    "answer_options": [
+                        {
+                            "option_id": "A",
+                            "option_text": "Analysis of the potential attacks; Evaluation of the possible risk.; Countermeasures to mitigate the risks. Strict Access Control (no direct access to AI system or AI application for the user). Penetration tests have been conducted"
+                        },
+                        {
+                            "option_id": "B",
+                            "option_text": "Analysis of the potential attacks; Evaluation of the possible risk.; Countermeasures to mitigate the risks.; Access Control; Penetration tests have been conducted"
+                        },
+                        {
+                            "option_id": "C",
+                            "option_text": "Analysis of the potential attacks; Evaluation of the possible risk.; Countermeasures to mitigate the risks. Access Control"
+                        },
+                        {
+                            "option_id": "D",
+                            "option_text": "Analysis of the potential attacks; Evaluation of the possible risk.; Countermeasures to mitigate the risks."
+                        },
+                        {
+                            "option_id": "E",
+                            "option_text": "Analysis of the potential attacks; Evaluation of the possible risk."
+                        },
+                        {
+                            "option_id": "G",
+                            "option_text": "No measures taken."
+                        }
+                    ],
+                    "followup_questions": []
+                }
+            ]
+        },
+        {
+            "collection_id": "P3",
+            "collection_title": "Consent-Process, Information and Influence for Users and affected Persons",
+            "collection_description": "",
+            "questions": [
+                {
+                    "question_id": "P3.1",
+                    "question_text": "Is the privacy impact assessment presented in the consent process?",
+                    "guidance": "The assessment needs to include the following aspects:\nWhat might be a concrete physical impacts when working with the system?\nWhat kind of moral harm can be caused by such a system?\nWhat could be material consequences of such a system?",
+                    "subquestion": null,
+                    "importance_level": 3,
+                    "required": true,
+                    "answer_options": [
+                        {
+                            "option_id": "A",
+                            "option_text": "Yes, individualized for different user groups"
+                        },
+                        {
+                            "option_id": "C",
+                            "option_text": "Yes, but in a general way"
+                        },
+                        {
+                            "option_id": "G",
+                            "option_text": "No"
+                        }
+                    ],
+                    "followup_questions": []
+                },
+                {
+                    "question_id": "P3.2",
+                    "question_text": "Is the privacy impact assessment accessible for affected Persons?",
+                    "guidance": "If there is a system that is allowed to take data from non-users due to a permission status (Erlaubnistatbeständes), can they still see the impact analysis?",
+                    "subquestion": null,
+                    "importance_level": 3,
+                    "required": false,
+                    "answer_options": [
+                        {
+                            "option_id": "A",
+                            "option_text": "Yes, individualized for different groups of affected persons"
+                        },
+                        {
+                            "option_id": "C",
+                            "option_text": "Yes, but in a general way"
+                        },
+                        {
+                            "option_id": "G",
+                            "option_text": "No"
+                        }
+                    ],
+                    "followup_questions": []
+                },
+                {
+                    "question_id": "P3.3",
+                    "question_text": "Can affected persons review and rectify data concerning them?",
+                    "guidance": "If there is a system that is allowed to collect data from non-users due to a permission status (Erlaubnistatbeständes), can they still see what data has been collected from them and have the opportunity to correct it?",
+                    "subquestion": null,
+                    "importance_level": 3,
+                    "required": false,
+                    "answer_options": [
+                        {
+                            "option_id": "A",
+                            "option_text": "There is a possibility that allows affected persons to easily review and rectify data concerning them. Appropriate information (e.g. sign) that data is collected is available. Contact possibilities are indicated"
+                        },
+                        {
+                            "option_id": "C",
+                            "option_text": "There is a possibility for affected persons to review and rectify data concerning them on request. Appropriate information (e.g. sign) that data is collected is available. Contact possibilities are indicated"
+                        },
+                        {
+                            "option_id": "D",
+                            "option_text": "No possibility to review or rectify data; Appropriate information (e.g. sign) that data is collected is available. Contact possibility are indicated"
+                        },
+                        {
+                            "option_id": "E",
+                            "option_text": "Appropriate information (e.g. sign) that data is collected is available."
+                        },
+                        {
+                            "option_id": "G",
+                            "option_text": "No."
+                        }
+
+                    ],
+                    "followup_questions": []
+                },
+                {
+                    "question_id": "P3.4",
+                    "question_text": "Design of the Consent-Process",
+                    "guidance": null,
+                    "subquestion": null,
+                    "importance_level": 3,
+                    "required": false,
+                    "answer_options": [
+                        {
+                            "option_id": "A",
+                            "option_text": "The consent process was examined and identified for possible nudging or persuasive computing effects from a psychological and sociological perspective. The effects were communicated to: - users, - affected persons. Appropriate precautionary measures were taken regarding: -users, - affected persons. Privacy by default (opt-in for usage of personal data is needed) for: -users, - affected persons"
+                        },
+                        {
+                            "option_id": "B",
+                            "option_text": "The consent process was examined and identified for possible nudging or persuasive computing effects from a psychological and sociological perspective. The effects were communicated to: - users, - affected persons. Appropriate precautionary measures were taken regarding: -users. Privacy by default (opt-in for usage of personal data is needed) for: -users"
+                        },
+                        {
+                            "option_id": "C",
+                            "option_text": "The consent process was examined and identified for possible nudging or persuasive computing effects from a psychological and sociological perspective. The effects were communicated to: - users, - affected persons."
+                        },
+                        {
+                            "option_id": "D",
+                            "option_text": "The consent process was examined and identified for possible nudging or persuasive computing effects from a psychological and sociological perspective. The effects were communicated to: - users"
+                        },
+                        {
+                            "option_id": "E",
+                            "option_text": "The consent process was examined and identified for possible nudging or persuasive computing effects from a psychological and sociological perspective."
+                        },
+                        {
+                            "option_id": "G",
+                            "option_text": "An examination has not taken place."
+                        }
+                    ],
+                    "followup_questions": []
+                }
+            ]
+        }
+    ]
+}

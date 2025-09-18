@@ -1,0 +1,117 @@
+{
+    "questionnaire_info": {
+        "title": "Transparency",
+        "description": "",
+        "version": "1.0",
+        "created_date": "2025-06-02"
+    },
+    "question_collections": [
+        {
+            "collection_id": "T1",
+            "collection_title": "Documentation of Data Sets",
+            "collection_description": "",
+            "questions": [
+                {
+                    "question_id": "T1.1",
+                    "question_text": "Is the data's origin documented?",
+                    "guidance": "Established structured notations like 'datasheets for datasets' are recommended here.",
+                    "subquestion": null,
+                    "importance_level": 3,
+                    "required": true,
+                    "answer_options": [
+                        {
+                            "option_id": "A",
+                            "option_text": "Yes, with structured datasheets, including detailed information on: data handling, data collector, data collection method"
+                        },
+                        {
+                            "option_id": "B", 
+                            "option_text": "Yes, with structured datasheets including detailed information on: data handling, data collector, data collection method containing few (not all) information"
+                        },
+                        {
+                            "option_id": "C",
+                            "option_text": "Yes, information is collected on: data collection method, data handling, data collector containing few or missing information without structured datasheets"
+                        },
+                        {
+                            "option_id": "D",
+                            "option_text": "Only general information on the data's origin is documented."
+                        },
+                        {
+                            "option_id": "G",
+                            "option_text": "No documentation of data origin."
+                        }
+                    ],
+                    "followup_questions": []
+                },
+                {
+                    "question_id": "T1.2",
+                    "question_text": "Are the characteristics of data sets analysed and documented?",
+                    "guidance": null,
+                    "subquestion": "Explorative question. Related to R1.2 and F1.7.",
+                    "importance_level": 3,
+                    "required": true,
+                    "answer_options": [
+                        {
+                            "option_id": "A",
+                            "option_text": "Yes, structured information about the characteristics of data sets, including all mentioned characteristics are provided."
+                        },
+                        {
+                            "option_id": "B",
+                            "option_text": "Yes, structured information about the characteristics of data sets, including all mentioned characteristics, are provided only some contain few or missing information."
+                        },
+                        {
+                            "option_id": "C",
+                            "option_text": "Yes, structured information about the characteristics of data sets are provided, but not covering all mentioned characteristics"
+                        },
+                        {
+                            "option_id": "D",
+                            "option_text": "Yes, some not-structured information about the characteristics of data sets are provided."
+                        },
+                        {
+                            "option_id": "G",
+                            "option_text": "No documentation of data set characteristics."
+                        }
+                    ],
+                    "followup_questions": []
+                }
+            ]
+        },
+        {
+            "collection_id": "T2",
+            "collection_title": "Documentation about the AI Systems Operation",
+            "collection_description": "This collection contains questions that help to document the characteristics of the AI system(s) and AI Application. It is intended to provide transparency about the AI system(s) and AI Application used in research and development.",
+            "questions": [
+                {
+                    "question_id": "T2.1",
+                    "question_text": "Are the characteristics of the AI system(s) documented?",
+                    "guidance": "Characteristics of AI system(s) are: architecture or model graph (Num of layers, Parameters, connectivity input-output dimensions), expected input data, expected output data, parameter precision (e.g. 8/16/32-bit).",
+                    "subquestion": null,
+                    "importance_level": 3,
+                    "required": true,
+                    "answer_options": [
+                        {
+                            "option_id": "A",
+                            "option_text": "Yes, with comprehensive structured documentation including all mentioned characteristics"
+                        },
+                        {
+                            "option_id": "B",
+                            "option_text": "Yes, with structured documentation including most mentioned characteristics"
+                        },
+                        {
+                            "option_id": "C",
+                            "option_text": "Yes, some information is documented but not structured or comprehensive"
+                        },
+                        {
+                            "option_id": "D",
+                            "option_text": "Only general information about AI system characteristics is documented."
+                        },
+                        {
+                            "option_id": "G",
+                            "option_text": "No documentation of AI system characteristics."
+                        }
+                    ],
+                    "followup_questions": []
+                }
+            ]
+        }
+    ]
+}

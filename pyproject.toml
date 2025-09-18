@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "checklist-mvp"
+version = "0.1.0"
+description = "Digitalisation of VDE Spec VCIO Spec Model"
+authors = ["lisakoeritz <lisa.koeritz@protonmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+streamlit = "^1.45.1"
+numpy = "^2.2.6"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

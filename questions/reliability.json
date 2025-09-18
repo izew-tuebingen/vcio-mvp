@@ -1,0 +1,345 @@
+{
+    "questionnaire_info": {
+        "title": "Reliability",
+        "description": "",
+        "version": "1.0",
+        "created_date": "2025-06-09"
+    },
+    "question_collections": [
+        {
+            "collection_id": "R1",
+            "collection_title": "Robustness & Reliability qua Design",
+            "collection_description": "",
+            "questions": [
+                {
+                    "question_id": "R1.1",
+                    "question_text": "Is the operational design domain of the AI system/application clearly defined and documented?",
+                    "guidance": "The Operational Design Domain (ODD) describes the conditions and environment an AI system/application is intended to operate within, and reasonably expected to encounter. This ODD should be described accurately and in enough detail such that the environment and boundaries of operation are clear.",
+                    "subquestion": null,
+                    "importance_level": 3,
+                    "required": true,
+                    "answer_options": [
+                        {
+                            "option_id": "A",
+                            "option_text": "A ontologically complete, structured and detailed description of the operational design domain and the intended use cases. These are published and well understood by the users of the AI system, auditors, regulatory bodies, and all additional stakeholders."
+                        },
+                        {
+                            "option_id": "B",
+                            "option_text": "A ontologically complete, structured and detailed description of the operational design domain and the intended use cases. These are published and well understood by the users of the AI system, auditors, and regulatory bodies."
+                        },
+                        {
+                            "option_id": "C",
+                            "option_text": "A description of the operational design domain and the intended use cases. These are published and well understood by the users of the AI system, auditors, and regulatory bodies."
+                        },
+                        {
+                            "option_id": "D",
+                            "option_text": "A description of the operational design domain and the intended use cases. These are published and well understood by the users of the AI system."
+                        },
+                        {
+                            "option_id": "E",
+                            "option_text": "A description of the intended use cases. These are published and well understood by the users of the AI system."
+                        },
+                        {
+                            "option_id": "G",
+                            "option_text": "No"
+                        }
+                    ],
+                    "followup_questions": []
+                },
+                {
+                    "question_id": "R1.2",
+                    "question_text": "Was ensured, that the quality and quantity of the data fit to the intended purpose and Operational Design Domain?",
+                    "guidance": "",
+                    "subquestion": null,
+                    "importance_level": 3,
+                    "required": true,
+                    "answer_options": [
+                        {
+                            "option_id": "A",
+                            "option_text": "Documentation of which shows the examination of: Completeness of the attributes of the data, Correctness of data, data format, the labeling and Annotation Process including quality assurance, compatibility of Training data with the operational design domain, relevant data preparation; i.e. raw data pre-processing (e.g. cleaning, enrichment, aggregation) with regard to the intended purpose and Operational Design Domain of the AI System"
+                        },
+                        {
+                            "option_id": "B",
+                            "option_text": "Documentation of which shows the examination of: Completeness of the attributes of the data, Correctness of data, data format, the labeling and Annotation Process including quality assurance, compatibility of Training data with the operational design domain, relevant data preparation; i.e. raw data pre-processing (e.g. cleaning, enrichment, aggregation)."
+                        },
+                        {
+                            "option_id": "D",
+                            "option_text": "Documentation of which shows the examination of: Completeness of the attributes of the data, Correctness of data, data format, the Labeling and Annotation Process including quality assurance, relevant data preparation; i.e. raw data pre-processing (e.g. cleaning, enrichment, aggregation)."
+                        },
+                        {
+                            "option_id": "E",
+                            "option_text": "Documentation of which shows the examination of: Completeness of the attributes of the data, Correctness of data, data format, the Labeling and Annotation Process including quality assurance."
+                        },
+                        {
+                            "option_id": "F",
+                            "option_text": "Documentation of which shows the examination of: Completeness of the attributes of the data, data format."
+                        },
+                        {
+                            "option_id": "G",
+                            "option_text": "No"
+                        }
+                    ],
+                    "followup_questions": []
+                },
+                {
+                    "question_id": "R1.3",
+                    "question_text": "Was the quality of the development of the AI systems ensured?",
+                    "guidance": "",
+                    "subquestion": null,
+                    "importance_level": 3,
+                    "required": true,
+                    "answer_options": [
+                        {
+                            "option_id": "A",
+                            "option_text": "Justification of the approach and models used. With documentation and justification of the chosen: - Performance and Evaluation Metrics - Optimization metric - The testing strategy. Live testing that covers the ODD and reasonably foreseen situations of the OD has been performed."
+                        },
+                        {
+                            "option_id": "B",
+                            "option_text": "Justification of the approach and models used. With documentation and justification of the chosen: - Performance and Evaluation Metrics - Optimization metric - The testing strategy. Live testing that covers the ODD has been performed."
+                        },
+                        {
+                            "option_id": "C",
+                            "option_text": "Justification of the approach and models used. With documentation and justification of the chosen: - Performance and Evaluation Metrics - Optimization metric - The testing strategy. (Virtual) Testing inside the ODD has been performed."
+                        },
+                        {
+                            "option_id": "D",
+                            "option_text": "Justification of the approach and models used. With documentation and justification of the chosen: - Performance and Evaluation Metrics - Optimization metric. (Virtual) Testing inside the ODD has been performed."
+                        },
+                        {
+                            "option_id": "E",
+                            "option_text": "Justification of the approach and models used. With documentation and justification of the chosen: - Performance and Evaluation Metrics - Optimization metric."
+                        },
+                        {
+                            "option_id": "F",
+                            "option_text": "Justification of the approach and models used."
+                        },
+                        {
+                            "option_id": "G",
+                            "option_text": "No"
+                        }
+                    ],
+                    "followup_questions": []
+                },
+                {
+                    "question_id": "R1.4",
+                    "question_text": "Is the system robust against varying environments (i.e. distribution shift) and outliers?",
+                    "guidance": "Varying environments can influence the Performance of an AI system. The system needs to be able to detect varying environments to adapt its behaviour.",
+                    "subquestion": null,
+                    "importance_level": 3,
+                    "required": true,
+                    "answer_options": [
+                        {
+                            "option_id": "A",
+                            "option_text": "System must be able to gracefully track and monitor changes in the operational environment. It must offer mechanisms to adapt to observed changes in the operational design domain."
+                        },
+                        {
+                            "option_id": "B",
+                            "option_text": "Relaxation of Grade A: reasonably adhere to changes in the operational design domain."
+                        },
+                        {
+                            "option_id": "C",
+                            "option_text": "Yes, but only in a subdomain."
+                        },
+                        {
+                            "option_id": "G",
+                            "option_text": "No"
+                        }
+                    ],
+                    "followup_questions": []
+                },
+                {
+                    "question_id": "R1.5",
+                    "question_text": "Are all possible risks assessed and the harms the system could have classified (e.g. life and health, violation of rights etc.)?",
+                    "guidance": "",
+                    "subquestion": null,
+                    "importance_level": 3,
+                    "required": true,
+                    "answer_options": [
+                        {
+                            "option_id": "A",
+                            "option_text": "All risks are transparent, well documented with the product and made available to customers."
+                        },
+                        {
+                            "option_id": "B",
+                            "option_text": "All risks are transparent and can be obtained by a defined interface."
+                        },
+                        {
+                            "option_id": "C",
+                            "option_text": "Main risks are identified and can be retrieved by a defined process."
+                        },
+                        {
+                            "option_id": "G",
+                            "option_text": "None of the above."
+                        }
+                    ],
+                    "followup_questions": []
+                },
+                {
+                    "question_id": "R1.6",
+                    "question_text": "Are measures in place to ensure the integrity, robustness and overall security of the AI system/application against potential attacks over its life cycle?",
+                    "guidance": "Implementation of general cybersecurity measures.",
+                    "subquestion": null,
+                    "importance_level": 3,
+                    "required": true,
+                    "answer_options": [
+                        {
+                            "option_id": "A",
+                            "option_text": "Compliance to cybersecurity standards (e.g. ISO 27k series, IEC 62443, ISO/SAE 21434, ETSI EN 303 645,...). Regular review security measures and protocols. Measures (including the ones taken during training of AI system) are defined and transparently documented with the product."
+                        },
+                        {
+                            "option_id": "B",
+                            "option_text": "Measures are defined and transparently documented with the product."
+                        },
+                        {
+                            "option_id": "C",
+                            "option_text": "Measures defined information can be retrieved by a defined interface."
+                        },
+                        {
+                            "option_id": "D",
+                            "option_text": "Measures partly defined and information can be retrieved by a defined process."
+                        },
+                        {
+                            "option_id": "G",
+                            "option_text": "None of the above."
+                        }
+                    ],
+                    "followup_questions": []
+                },
+                {
+                    "question_id": "R1.7",
+                    "question_text": "Did you inform end-users of the duration of security coverage and updates? What length is the expected timeframe within which you provide security updates for the AI system?",
+                    "guidance": "",
+                    "subquestion": null,
+                    "importance_level": 3,
+                    "required": true,
+                    "answer_options": [
+                        {
+                            "option_id": "A",
+                            "option_text": "Information is shipped with the product."
+                        },
+                        {
+                            "option_id": "B",
+                            "option_text": "Information can be obtained by a defined interface."
+                        },
+                        {
+                            "option_id": "C",
+                            "option_text": "Information partially available and can be retrieved by a defined process."
+                        },
+                        {
+                            "option_id": "G",
+                            "option_text": "None of the above."
+                        }
+                    ],
+                    "followup_questions": []
+                },
+                {
+                    "question_id": "R1.8",
+                    "question_text": "Are technical documentations documented, including standards, that need to be applied by the AI system/application?",
+                    "guidance": "",
+                    "subquestion": null,
+                    "importance_level": 3,
+                    "required": true,
+                    "answer_options": [
+                        {
+                            "option_id": "A",
+                            "option_text": "Yes."
+                        },
+                        {
+                            "option_id": "G",
+                            "option_text": "No."
+                        }
+                    ],
+                    "followup_questions": []
+                }
+            ]
+        },
+        {
+            "collection_id": "R2",
+            "collection_title": "Robustness & Reliability in Operation",
+            "collection_description": "",
+            "questions": [
+            {
+                    "question_id": "R2.1",
+                    "question_text": "Is the applied AI lifecycle management robust to changes in the operational domain?",
+                    "guidance": "",
+                    "subquestion": null,
+                    "importance_level": 3,
+                    "required": true,
+                    "answer_options": [
+                        {
+                            "option_id": "A",
+                            "option_text": "Continuous model monitoring and testing (including integrity checks) as a feature of the AI strategy covering the full operational domain."
+                        },
+                        {
+                            "option_id": "B",
+                            "option_text": "Continuous model monitoring and testing (including integrity checks) as a feature of the AI strategy covering key/important areas of the operational domain."
+                        },
+                        {
+                            "option_id": "C",
+                            "option_text": "Regular model monitoring and testing (including integrity checks) as a feature of the AI strategy covering key/important areas of the operational domain."
+                        },
+                        {
+                            "option_id": "D",
+                            "option_text": "Occasional model monitoring and testing (including integrity checks) are carried out."
+                        },
+                        {
+                            "option_id": "E",
+                            "option_text": "Occasional model monitoring and testing is carried out."
+                        },
+                        {
+                            "option_id": "F",
+                            "option_text": "Occasional testing is carried out."
+                        },
+                        {
+                            "option_id": "G",
+                            "option_text": "None of the above."
+                        }
+                    ],
+                    "followup_questions": []
+                },
+                {
+                    
+                    "question_id": "R2.2",
+                    "question_text": "Is a failure mitigation strategy for the AI-based system in place?",
+                    "guidance": "Is there a fail-safe strategy for the AI-based system in place? Reaction of the system if parts of it are not working properly (such as sensors malfunctioning) or if the input data is either corrupted or contains noise.",
+                    "subquestion": null,
+                    "importance_level": 3,
+                    "required": true,
+                    "answer_options": [
+                        {
+                            "option_id": "A",
+                            "option_text": "Presence of fall-back systems in case the AI-based system cannot work properly anymore (e.g., broken/dirty lens/microphone, electromagnetic interference)."
+                        },
+                        {
+                            "option_id": "B",
+                            "option_text": "Redundancy, fall back mechanisms (e.g., defaulting to a safe mode, kill-switch), alert system (end-user, provider, competent authority), fail-safe logging (i.e., black box), secure failure (e.g., tamper protection, safe mode), and system restoration."
+                        },
+                        {
+                            "option_id": "C",
+                            "option_text": "Redundancy, fall back mechanisms, alert system, fail-safe logging, secure failure."
+                        },
+                        {
+                            "option_id": "D",
+                            "option_text": "Redundancy, fall back mechanisms, alert system, secure failure."
+                        },
+                        {
+                            "option_id": "E",
+                            "option_text": "Fall back mechanisms, alert system, secure failure."
+                        },
+                        {
+                            "option_id": "F",
+                            "option_text": "Fall back mechanisms, basic alert system."
+                        },
+                        {
+                            "option_id": "G",
+                            "option_text": "None of the above."
+                        }
+                    ],
+                    "followup_questions": []
+                }
+            ]
+        }
+    ]
+}
+
+

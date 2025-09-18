@@ -1,0 +1,405 @@
+{
+    "questionnaire_info": {
+        "title": "Fairness",
+        "description": "",
+        "version": "1.0",
+        "created_date": "2025-06-09"
+    },
+    "question_collections": [
+        {
+            "collection_id": "F1",
+            "collection_title": "Assuring fairness during development",
+            "collection_description": "",
+            "questions": [
+                {
+                    "question_id": "F1.1",
+                    "question_text": "Are all entities impacted and/or influenced by the system considered?",
+                    "guidance": "Considers the impact on the environment in which the system is to be used, including the human agency concept, implementation in the socio-technical system,…",
+                    "subquestion": null,
+                    "importance_level": 3,
+                    "required": true,
+                    "answer_options": [
+                        {
+                            "option_id": "A",
+                            "option_text": "Yes, entities are considered that: directly interface with the AI system (1st order network effects), affected by the deployment of this system (2nd order network effects) entities within the broader social-technical system it operates within"
+                        },
+                        {
+                            "option_id": "B", 
+                            "option_text": "Yes, entities are considered that: directly interface with the AI system (1st order network effects) affected by the deployment of this system (2nd order network effects)"
+                        },
+                        {
+                            "option_id": "D",
+                            "option_text": "Yes, entities are considered that: directly interface with the AI system (1st order network effects)"
+                        },
+                        {
+                            "option_id": "G",
+                            "option_text": "No"
+                        }
+                    ],
+                    "followup_questions": []
+                },
+                {
+                    "question_id": "F1.2",
+                    "question_text": "Are target groups defined?",
+                    "guidance": "Important characteristics to define different target groups: Demography (age, income, family size, family status, gender, education,…); Geography (residence, origin,…)",
+                    "subquestion": null,
+                    "importance_level": 3,
+                    "required": true,
+                    "answer_options": [
+                        {
+                            "option_id": "A",
+                            "option_text": "Yes, all of the target groups, entities and users are identified and a justification for the selection is provided including additional target groups that arise from reasonably unforeseen misuses"
+                        },
+                        {
+                            "option_id": "B", 
+                            "option_text": "Yes, all of the target groups, entities and users are identified and a justification for the selection is provided"
+                        },
+                        {
+                            "option_id": "C",
+                            "option_text": "Yes, most of the target groups, entities and users are identified and a justification for the selection is provided"
+                        },
+                        {
+                            "option_id": "D",
+                            "option_text": "Yes, some of the target groups, entities and users are identified"
+                        },
+                        {
+                            "option_id": "G",
+                            "option_text": "No"
+                        }
+                    ],
+                    "followup_questions": []
+                },
+                {
+                    "question_id": "F1.3",
+                    "question_text": "Are there marginalised entities within the target group and does risk arise for them being marginalised?",
+                    "guidance": "",
+                    "subquestion": null,
+                    "importance_level": 3,
+                    "required": true,
+                    "answer_options": [
+                        {
+                            "option_id": "A",
+                            "option_text": "Yes, 1. A research to identify all marginalised groups/entities is carried out, 2. All risk that arises from any of the groups being marginalised are detailed and justified, 3. The marginalised groups/entities are involved in the development process"
+                        },
+                        {
+                            "option_id": "B", 
+                            "option_text": "Yes, 1. A research to identify all marginalised groups/entities is carried out, 2. All risk that arises from any of the groups being marginalised are detailed and justified"
+                        },
+                        {
+                            "option_id": "C",
+                            "option_text": "Yes, 1. A research to identify all affected marginalised groups/entities is carried out"
+                        },
+                        {
+                            "option_id": "G",
+                            "option_text": "No"
+                        }
+                    ],
+                    "followup_questions": []
+                },
+                {
+                    "question_id": "F1.4",
+                    "question_text": "Is there a commitment to a fairness definition that considers F1.2 and F1.3.?",
+                    "guidance": "",
+                    "subquestion": null,
+                    "importance_level": 3,
+                    "required": true,
+                    "answer_options": [
+                        {
+                            "option_id": "A",
+                            "option_text": "A fairness definition is defined and provided in collaboration with the target group and marginalised entities/groups. There is a commitment to considering it throughout the lifecycle of the AI system. There is a commitment to a process to validate and ensure the integrity of the fairness criteria throughout the life cycle of the AI system. Easy access and transparency to the fairness definition and criteria is provided to the public, including justification for the definition and process."
+                        },
+                        {
+                            "option_id": "B", 
+                            "option_text": "A fairness definition is provided and considered throughout the lifecycle of the AI system. There is a commitment to a process to validate and ensure the integrity of the fairness criteria throughout the life cycle of the AI system. Easy access and transparency to the fairness definition and criteria is provided to the public, including justification for the definition and process."
+                        },
+                        {
+                            "option_id": "C",
+                            "option_text": "A fairness definition is provided and considered throughout the lifecycle of the AI system. Easy access and transparency to the fairness definition and criteria is provided to the public, including justification for the definition and process."
+                        },
+                        {
+                            "option_id": "D",
+                            "option_text": "A fairness definition is provided and considered within the development process."
+                        },
+                        {   "option_id": "E",
+                            "option_text": "A fairness definition is provided."
+                        },
+                        {
+                            "option_id": "G",
+                            "option_text": "No"
+                        }
+                    ],
+                    "followup_questions": []
+                },
+                {
+                    "question_id": "F1.5",
+                    "question_text": "Are metrics to track/evaluate fairness with respect to F1.2 and F1.4 in place?",
+                    "guidance": "Typical fairness metrics are e.g.: Statistical parity, equal distribution of false negatives, equal distribution of false positives, decision between group fairness or individual fairness, fairness through unawareness, equality of opportunity.",
+                    "subquestion": null,
+                    "importance_level": 3,
+                    "required": true,
+                    "answer_options": [
+                        {
+                            "option_id": "A",
+                            "option_text": "Several metrics to measure and track fairness are in place, that completely align with the fairness definition and criteria throughout the whole lifecycle of the AI system. These metrics have been developed in collaboration with the target group and the marginalised users/entities. The metrics are well documented and transparent to the public"
+                        },
+                        {
+                            "option_id": "B", 
+                            "option_text": "Several metrics to measure and track fairness are in place, that completely align with the fairness definition and criteria throughout the whole lifecycle of the AI system. These metrics have been developed in collaboration with the target group and the marginalised users/entities."
+                        },
+                        {
+                            "option_id": "C",
+                            "option_text": "Several metrics to measure and track fairness are in place, that completely align with the fairness definition and criteria throughout the whole lifecycle of the AI system."
+                        },
+                        {
+                            "option_id": "D",
+                            "option_text": "Several metrics to measure and track fairness are in place."
+                        },
+                        {
+                            "option_id": "E",
+                            "option_text": "A metric to measure and track fairness is in place."
+                        },
+                        {
+                            "option_id": "G",
+                            "option_text": "No"
+                        }
+                    ],
+                    "followup_questions": []
+                },
+                {
+                    "question_id": "F1.7",
+                    "question_text": "Has the data been analysed for potential harmful, unintended biases with regard to F1.4 and F1.5?", 
+                    "guidance": "",
+                    "subquestion": null,
+                    "importance_level": 3,
+                    "required": true,
+                    "answer_options": [
+                        {
+                            "option_id": "A",
+                            "option_text": "A datasheet is provided. It documents which data sources have been assessed and with which methods in order to identify biases that might bring harm or risk. The documentation covers the objectives and measures taken to avoid harm and risk. It also states why the actions taken are reasonable in relation to the selected fairness metric. The documentation is released to the public. The nature of the bias has been ascertained. It was considered and assessed with respect to the fairness definition and criteria."
+                        },
+                        {
+                            "option_id": "B", 
+                            "option_text": "A datasheet is provided. It documents which data sources have been assessed and with which methods in order to identify biases that might bring harm or risk. The documentation covers the objectives and measures taken to avoid harm and risk. The documentation is released to the public. The nature of the bias has been ascertained. It was considered and assessed with respect to the fairness definition and criteria."},
+                        {
+                            "option_id": "C",
+                            "option_text": "A datasheet is provided. The documentation covers the objectives and measures taken to avoid harm and risk. The nature of the bias has been ascertained. It was considered and assessed with respect to the fairness definition and criteria."
+                        },
+                        {
+                            "option_id": "D",
+                            "option_text": "The nature of the bias has been ascertained. It was considered and assessed with respect to the fairness definition and criteria."
+                        },
+                        {
+                            "option_id": "E",
+                            "option_text": "The data has been analysed for the most common and easily identifiable biases. This has been documented and considered with respect to the fairness definition and criteria."
+                        },
+                        {
+                            "option_id": "G",
+                            "option_text": "No"
+                        }
+                    ],
+                    "followup_questions": []
+                },
+                {
+                    "question_id": "F1.8",
+                    "question_text": "Have trade-offs between fairness and other objectives been identified, assessed and justified?",
+                    "guidance": "Identification, assessment and justification according to the target group and marginalised users/entities. Possible objectives can be performance or privacy.",
+                    "subquestion": null,
+                    "importance_level": 3,
+                    "required": true,
+                    "answer_options": [
+                        {
+                            "option_id": "A",
+                            "option_text": "Trade-offs have been identified and documented in collaboration with the target group and marginalised groups. Consideration of how to balance any trade-off involved  collaboration with or are based on the feedback of the target group and marginalised groups. This process is well documented and accessible to the target group and marginalised groups"
+                        },
+                        {
+                            "option_id": "B", 
+                            "option_text": "Trade-offs have been identified and documented in collaboration with the target group and marginalised groups. Consideration of how to balance any trade-off involved  collaboration with or are based on the feedback of the target group and marginalised groups."
+                        },
+                        {
+                            "option_id": "D",
+                            "option_text": "Trade-offs have been identified and document in collaboration with the target group and marginalised users/entities." 
+                        },
+                        {
+                            "option_id": "E",
+                            "option_text": "Trade-offs have been identified and document."
+                        },
+                        {
+                            "option_id": "G",
+                            "option_text": "No"
+                        }
+                    ],
+                    "followup_questions": []
+                }
+            ]
+        },
+        {
+            "collection_id": "F2",
+            "collection_title": "Working and Supply Chain Conditions",
+            "collection_description": "",
+            "questions": [
+                {
+                    "question_id": "F2.1",
+                    "question_text": "Skippable if no external participation -- Are the working conditions of external persons involved in the labelling process evaluated?",
+                    "guidance": "Minimal safety and worker protection standards and standards regarding social security and protection from exploitation in place at the facility providing click work are covered by the Supply Chain Act, for example.",
+                    "subquestion": null,
+                    "importance_level": 3,
+                    "required": false,
+                    "answer_options": [
+                        {
+                            "option_id": "A",
+                            "option_text": "Yes, the following conditions are evaluated: - minimal safety and worker protection standards, - minimal standards regarding social security and protection from exploitation, - click work-specific working conditions (diversification of tasks, potential emotional/psychological dangers from explicit material). The datasets (e.g. datasheet) contain information about labelling (click working) process. It is published, that external persons are involved."
+                        },
+                        {
+                            "option_id": "B", 
+                            "option_text": "Yes, the following conditions are evaluated: - minimal safety and worker protection standards, - minimal standards regarding social security and protection from exploitation. The datasets (e.g. datasheet) contain information about labelling (click working) process. It is published, that external persons are involved." 
+                        },
+                        {
+                            "option_id": "C",
+                            "option_text": "Yes, one of the two following conditions are evaluated: - minimal safety and worker protection standards, - minimal standards regarding social security and protection from exploitation. The datasets (e.g. datasheet) contain information about labelling (click working) process. It is published, that external persons are involved."
+                        },
+                        {
+                            "option_id": "D",
+                            "option_text": "The datasets (e.g. datasheet) contain information about labelling (click working) process. It is published, that external persons are involved."
+                        },
+                        {
+                            "option_id": "E",
+                            "option_text": "It is published, that external persons are involved."
+                        },
+                        {
+                            "option_id": "G",
+                            "option_text": "No, there is no evaluation or documentation"
+                        }
+                    ],
+                    "followup_questions": []
+                },
+                {
+                    "question_id": "F2.2",
+                    "question_text": "Is the supply chain monitored to evaluate working conditions and to prevent human rights violation and child labour?",
+                    "guidance": "Examples for legal requirements: - German Act on Corporate Due Diligence Obligations in Supply Chains, - EU Corporate Due Diligence Obligations in Supply Chains",
+                    "subquestion": null,
+                    "importance_level": 3,
+                    "required": true,
+                    "answer_options": [
+                        {
+                            "option_id": "A",
+                            "option_text": "Yes, the supply chain is consequently monitored due to existing legal requirements or similar obligations."
+                        },
+                        {
+                            "option_id": "C", 
+                            "option_text": "The suppliers are reviewed once. There is a company specific policy to handle violations."
+                        },
+                        {
+                            "option_id": "D",
+                            "option_text": "The suppliers are reviewed once."
+                        },
+                        {
+                            "option_id": "G",
+                            "option_text": "No."
+                        }
+                    ],
+                    "followup_questions": []
+                }
+            ]
+        },
+        {
+            "collection_id": "F3",
+            "collection_title": "Ecological Sustain Development",
+            "collection_description": "",
+            "questions": [
+                {
+                    "question_id": "F3.1",
+                    "question_text": "Are data centres or servers,which are used for developing, supplied with renewable energy?",
+                    "guidance": "Renewable energy includes solar, wind, hydro, geothermal, biomass  and marine energy. Climate positivity can be reached through e.g. carbon offsetting or reuse of excess energy for heating.",
+                    "subquestion": null,
+                    "importance_level": 3,
+                    "required": true,
+                    "answer_options": [
+                        {
+                            "option_id": "A",
+                            "option_text": "Yes, at least 99% and the data centres are climate positive"
+                        },
+                        {
+                            "option_id": "B", 
+                            "option_text": "Yes, at least 99%"
+                        },
+                        {
+                            "option_id": "C",
+                            "option_text": "In part, at least 80%"
+                        },
+                        {
+                            "option_id": "D",
+                            "option_text": "In part, at least 60%"
+                        },
+                        {
+                            "option_id": "E",
+                            "option_text": "In part, at least 40%"
+                        },
+                        {
+                            "option_id": "F",
+                            "option_text": "In part, at least 20%"
+                        },
+                        {
+                            "option_id": "G",
+                            "option_text": "Less than 20%"
+                        }
+                    ],
+                    "followup_questions": []
+                },
+                {
+                    "question_id": "F3.2",
+                    "question_text": "Is a report available detailing of energy consumption during training of the AI system?",
+                    "guidance": "The report has to include a calculation or estimates of energy consumption and carbon emissions of all system components or the system overall, measures for carbon offsetting or energy reuse, a description of other ecological impact incl. directly resulting waste generation, an explanation of the process of consideration between its ecological impact (incl. energy consumption) and other factors (e.g. accuracy), and an explanation of why the chosen AI model is used with regards to its ecological sustainability.",
+                    "subquestion": null,
+                    "importance_level": 3,
+                    "required": true,
+                    "answer_options": [
+                        {
+                            "option_id": "A",
+                            "option_text": "Yes, and this report was published before or during launch of the system with estimates and was updated after the launch with actual energy use calculations."
+                        },
+                        {
+                            "option_id": "B", 
+                            "option_text": "Yes, and this report was published after the system was already in use"
+                        },
+                        {
+                            "option_id": "C",
+                            "option_text": "Yes, and this report was published before or during launch of the system with estimates"
+                        },
+                        {
+                            "option_id": "D",
+                            "option_text": "A report was written but is only available internally"
+                        },
+                        {
+                            "option_id": "G",
+                            "option_text": "No"
+                        }
+                    ],
+                    "followup_questions": []
+                },
+                {
+                    "question_id": "F3.3",
+                    "question_text": "How is the disposal of electronic waste processed?",
+                    "guidance": "Does not include the waste generated by the user",
+                    "subquestion": null,
+                    "importance_level": 3,
+                    "required": true,
+                    "answer_options": [
+                        {
+                            "option_id": "A",
+                            "option_text": "It is ensured that electronic waste is recycled as far as possible and not exported to risk areas (including Supply Chain)"
+                        },
+                        {
+                            "option_id": "B", 
+                            "option_text": "It is ensured that electronic waste is recycled as far as possible and not exported to risk areas (just for electronics that are in control of the organisation)"
+                        },
+                        {
+                            "option_id": "G",
+                            "option_text": "There is no detailed knowledge"
+                        }
+                    ],
+                    "followup_questions": []
+                }
+            ]
+        }
+    ]
+}
